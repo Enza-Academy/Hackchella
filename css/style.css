@@ -131,7 +131,8 @@ a:hover, a:focus, a:active, a:visited {
     margin: 1em 0;
 }
 .hero-header .logo {
-	max-width: 250px;
+	max-width: 65%;
+    margin-bottom: -50px;
 }
 .hero-header .btn {
 	margin-top: 1em;
