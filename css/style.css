@@ -119,7 +119,7 @@ a:hover, a:focus, a:active, a:visited {
     height: 100vh;
 	min-height: 600px;
 	padding: 5%;
-    color: black;
+    color: white;
 }
 
 .hero-header .logo {
@@ -129,7 +129,7 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .hero-header h1 span {
-    background-color: white;
+   /* background-color: white;*/
     opacity: 1;
     font-weight: normal;
 /*	margin: 1em 0 0 0;*/
@@ -137,13 +137,13 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .hero-header h2 span {
-    background-color: white;
+  /*  background-color: white;*/
     opacity: 1;
     font-weight: normal;
 }
 
 .hero-header h3 span {
-    background-color: white;
+    /*background-color: white;*/
 	opacity: 1;
     font-weight: normal;
     letter-spacing: 1px;
