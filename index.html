@@ -455,6 +455,9 @@
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-9">
                   <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
+                  <!-- <input  type="file" id= "upload"  multiple size="50" class="btn btn-yellow pull-right" > -->
+                  <input  type="file" id= "upload" onchange="saveToFireBase()">
+
                 </div>
               </div>
             </form>
@@ -495,5 +498,35 @@
       <script src="js/scrolling-nav.js"></script>
       <script src="js/validator.js"></script>
       <script src="js/mailto.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDRaTcEIU5NhASiVwAGtXhO1UEl3VSc5y0",
+          authDomain: "hackchella.firebaseapp.com",
+          databaseURL: "https://hackchella.firebaseio.com",
+          projectId: "hackchella",
+          storageBucket: "hackchella.appspot.com",
+          messagingSenderId: "456824483773"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script>
+        function saveToFireBase()
+        {
+          // var uploadedResume = document.getElementById("upload")
+        
+          // var file = event.target.files[0];
+          // firebase.database().ref('subscription-entries').push().set(file)
+          // .then(function(snapshot) {
+          //   console.log("successfully uploaded" + snapshot);
+          // }, function(error){
+          //   console.log('error: '+ error);
+          // })
+          const ref = firebase.storage().ref();
+          const file =$('.')
+   
+        }
+      </script>
     </body>
     </html>
