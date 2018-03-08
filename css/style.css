@@ -1,5 +1,5 @@
 body {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Itim', sans-serif;
     color: #404142;
     font-size: 16px;
 	letter-spacing: 0.8px;
@@ -107,7 +107,7 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .hero-header-content {
-   /* padding-top: 5%;*/
+ /*   padding-top: 5%;*/
 }
 
 
@@ -118,30 +118,47 @@ a:hover, a:focus, a:active, a:visited {
     text-align: center;
     height: 100vh;
 	min-height: 600px;
-	padding: 5em;
-	color: yellow;
+	padding: 5%;
+    color: black;
 }
-.hero-header h1 {
-	margin: 1em 0 0 0;
-}
-.hero-header h4 {
-	font-weight: normal;
-	opacity: 0.8;
-    letter-spacing: 1px;
-    margin: 1em 0;
-}
+
 .hero-header .logo {
-	max-width: 100%;
-    margin-top: -14em;
-    margin-bottom: 4em;
+    max-width: 100%;
+    margin-top: -3em;
+    margin-bottom: 5%;
 }
+
+.hero-header h1 span {
+    background-color: white;
+    opacity: 1;
+    font-weight: normal;
+/*	margin: 1em 0 0 0;*/
+    
+}
+
+.hero-header h2 span {
+    background-color: white;
+    opacity: 1;
+    font-weight: normal;
+}
+
+.hero-header h3 span {
+    background-color: white;
+	opacity: 1;
+    font-weight: normal;
+    letter-spacing: 1px;
+   /* margin: 1em 0;*/
+}
+
 .hero-header .btn {
 	margin-top: 1em;
 }
-.hero-header .rocket {
+
+/*.hero-header .rocket {
     height: 300px;
 	max-width: 100%;
-}
+}*/
+
 .hero-header .secondaryLogo {
     text-align: center;
 }
@@ -150,6 +167,7 @@ a:hover, a:focus, a:active, a:visited {
 }
 .row-title {
 	font-weight: 400;
+    font-size: 38px;
 }
 .feature {
 	padding: 20px;
