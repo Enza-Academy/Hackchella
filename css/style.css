@@ -107,9 +107,8 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .hero-header-content {
- /*   padding-top: 5%;*/
+ /*   padding-bottom: 5%;*/
 }
-
 
 .hero-header {
     background: url('../img/hackchella_group_one.jpg');
@@ -125,7 +124,7 @@ a:hover, a:focus, a:active, a:visited {
 .hero-header .logo {
     max-width: 100%;
     margin-top: -3em;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .hero-header h1 {
@@ -136,12 +135,12 @@ a:hover, a:focus, a:active, a:visited {
  font-weight: normal;
     }
 
-.hero-header h3 {  
+.hero-header h4 {  
  font-weight: normal;
 }
 
 .hero-header .btn {
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 
 .hero-header .secondaryLogo {
