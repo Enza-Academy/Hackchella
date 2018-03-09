@@ -456,7 +456,7 @@
                 <div class="col-sm-offset-3 col-sm-9">
                   <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
                   <!-- <input  type="file" id= "upload"  multiple size="50" class="btn btn-yellow pull-right" > -->
-                  <input  type="file" id= "upload" onchange="saveToFireBase()">
+                  <input  type="file" id= "upload"  onchange="saveToFireBase()">
 
                 </div>
               </div>
@@ -524,7 +524,15 @@
           //   console.log('error: '+ error);
           // })
           const ref = firebase.storage().ref();
-          const file =$('.')
+          const file =$('#upload').get(0).files[0];
+          const name = file.name;
+          const metadata = {contentType: file.type};
+          const task = ref.child(name).put(file, metadata);
+          task.then((snapshot) => {
+            console.log(snapshot.downloadURL);
+          }).catch((error)=>{
+            console.error(error);
+          })
    
         }
       </script>
