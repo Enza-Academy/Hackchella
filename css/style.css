@@ -291,6 +291,7 @@ a span.ti-twitter-alt {
     border-bottom: 2px solid #efefef;
     padding-bottom: 10px;
 }
+
 .schedule .media-body h5 {
 	text-transform: uppercase;
 	font-weight: 600;
@@ -305,8 +306,10 @@ a span.ti-twitter-alt {
 .footer h3 {
     font-family: 'Dosis', san-serif;
 }
-.footer p {
+
+.footer {
     margin-bottom: 0;
+    font-family: 'Arvo', serif;
 }
 
 .footer-credit {
@@ -343,6 +346,10 @@ ul.footer-menu li a:hover {
     background-color: #3a3a3a;
     color: #fff;
     padding: 1em;
+}
+
+.contact p {
+ font-family: 'Arvo', serif;
 }
 .contact h3 {
     margin-bottom: 30px;
