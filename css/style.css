@@ -307,10 +307,11 @@ a span.ti-twitter-alt {
 }
 .footer p {
     margin-bottom: 0;
-    font-family: 'Dosis', san-serif;
 }
+
 .footer-credit {
     padding: 40px;
+    font-family: 'Dosis', san-serif;
 }
 #social-footer {
     text-align: center;
