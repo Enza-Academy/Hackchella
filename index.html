@@ -400,7 +400,7 @@
               <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">Your Full Name<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="name" placeholder="Steve Wozniak" required>
+                  <input type="text" class="form-control" id="resname" placeholder="Steve Wozniak" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
@@ -408,22 +408,22 @@
               <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">Your Best Email<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control" id="email" placeholder="steve@hackchella.com" required>
+                  <input type="email" class="form-control" id="resemail" placeholder="steve@hackchella.com" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
               </div>
               <div class="form-group">
-                <label for="message" class="col-sm-3 control-label">Upload Resume<sup>*</sup></label>
+                <label for="fileupload" class="col-sm-3 control-label">Upload Resume<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <textarea id="message" class="form-control" rows="1" placeholder="Please upload your resume in PDF format" required></textarea>
+                  <input id="fileupload"  type = "file" class="form-control" rows="1" placeholder="Please upload your resume in PDF format" required></input>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-9">
-                  <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send My Resume Now <span class="ti-arrow-right"></span></button>
+                  <button id= "submit" name="submit" class="btn btn-yellow pull-right" onclick="saveResumeToFireBase()">Send My Resume Now <span class="ti-arrow-right"></span></button>
                 </div>
               </div>
             </form>
@@ -495,7 +495,7 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-9">
-                  <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
+                  <button id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
                   <p>You can ask us any questions about our programs.</p>
                 </div>
               </div>
@@ -550,28 +550,22 @@
         firebase.initializeApp(config);
       </script>
       <script>
-        function saveToFireBase()
+        function saveResumeToFireBase()
         {
-          // var uploadedResume = document.getElementById("upload")
-        
-          // var file = event.target.files[0];
-          // firebase.database().ref('subscription-entries').push().set(file)
-          // .then(function(snapshot) {
-          //   console.log("successfully uploaded" + snapshot);
-          // }, function(error){
-          //   console.log('error: '+ error);
-          // })
+          $(".form-group").click(function(){return false});
           const ref = firebase.storage().ref();
-          const file =$('#upload').get(0).files[0];
-          const name = file.name;
+          const file =$('#fileupload').get(0).files[0];
+          const name = $('#resemail').val()+" " + $('#resname').val()+" " +file.name+ '-' + +(+new Date());
           const metadata = {contentType: file.type};
           const task = ref.child(name).put(file, metadata);
           task.then((snapshot) => {
-            console.log(snapshot.downloadURL);
+            console.log( snapshot.downloadURL);
           }).catch((error)=>{
             console.error(error);
           })
-   
+
+          $("#submit").html("Success");
+          $("#submit").attr("disabled", "disabled");
         }
       </script>
     </body>
