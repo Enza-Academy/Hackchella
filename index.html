@@ -69,7 +69,7 @@
               <h2><span>Friday, April 20<sup>th</sup> to Sunday, April 22<sup>nd</sup> 2018</span></h2>
               <a href="#tickets" class="btn btn-lg btn-danger page-scroll">Get Your Ticket <span class="ti-arrow-right"></span></a>
               <a href="#sponsors" class="btn btn-lg btn-warning page-scroll">Our Partners &amp; Sponsors <span class="ti-arrow-right"></span></a>
-              <a href="#contact" class="btn btn-lg btn-success page-scroll">Submit Your Resume<span class="ti-arrow-right"> </span></a>
+              <a href="#resume" class="btn btn-lg btn-success page-scroll">Submit Your Resume<span class="ti-arrow-right"> </span></a>
               <h4><span>(OPEN TO ALL COLLEGE STUDENTS AND RECENT GRADUATES)</span></h4>
             </div>
           </div>
@@ -391,6 +391,47 @@
       </div>
       <!-- End: Schedule -->
 
+      <!-- Start: Resume -->
+      <div class="container-fluid resume" id="resume">
+        <div class="row me-row content-ct">
+          <h2 class="row-title">Submit Your Resume</h2>
+          <div class="col-md-10 col-sm-12">
+              <form class="form-horizontal" data-toggle="validator" role="form">
+              <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">Your Full Name<sup>*</sup></label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="name" placeholder="Steve Wozniak" required>
+                  <div class="help-block with-errors pull-right"></div>
+                  <span class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Your Best Email<sup>*</sup></label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="email" placeholder="steve@hackchella.com" required>
+                  <div class="help-block with-errors pull-right"></div>
+                  <span class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="col-sm-3 control-label">Upload Resume<sup>*</sup></label>
+                <div class="col-sm-9">
+                  <textarea id="message" class="form-control" rows="1" placeholder="Please upload your resume in PDF format" required></textarea>
+                  <div class="help-block with-errors pull-right"></div>
+                  <span class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send My Resume Now <span class="ti-arrow-right"></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End: Resume -->
+
       <!-- Start: Sponsors -->
       <div class="container sponsors" id="sponsors">
         <div class="row me-row content-ct">
@@ -429,17 +470,17 @@
             <center><h3 class="content-ct"><span class="ti-email"></span> Contact The Hackchella Team. Or Call 914 487 4223</h3></center>
             <form class="form-horizontal" data-toggle="validator" role="form">
               <div class="form-group">
-                <label for="name" class="col-sm-3 control-label">Name<sup>*</sup></label>
+                <label for="name" class="col-sm-3 control-label">Your Name<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                  <input type="text" class="form-control" id="name" placeholder="Steve Wozniak" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
               </div>
               <div class="form-group">
-                <label for="email" class="col-sm-3 control-label">Email<sup>*</sup></label>
+                <label for="email" class="col-sm-3 control-label">Your Email<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control" id="email" placeholder="you@youremail.com" required>
+                  <input type="email" class="form-control" id="email" placeholder="steve@hackchella.com" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
@@ -455,7 +496,7 @@
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-9">
                   <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
-                  <p>You can request our sponsorship package, submit your resume or ask questions about our current programs.</p>
+                  <p>You can ask us any questions about our programs.</p>
                 </div>
               </div>
             </form>

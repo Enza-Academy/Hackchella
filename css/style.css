@@ -239,6 +239,21 @@ a span.ti-twitter-alt {
     background-position: center;
 }
 
+.resume {
+    background: url('../img/gradient-bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.resume .row-title {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.resume .control-label {
+    color: #ffffff; 
+}
+
 .location .row-title {
     color: #ffffff;
     margin-bottom: 20px;
