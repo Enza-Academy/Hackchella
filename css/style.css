@@ -257,6 +257,11 @@ a span.ti-twitter-alt {
     margin-bottom: 20px;
 }
 
+.resume p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
 .resume .control-label {
     color: #ffffff; 
 }
