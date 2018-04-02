@@ -266,6 +266,11 @@ a span.ti-twitter-alt {
     color: #ffffff; 
 }
 
+.cavalogo {
+ padding-top: 65px;
+ max-width: 150px; 
+}
+
 .location .row-title {
     color: #ffffff;
     margin-bottom: 20px;
