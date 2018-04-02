@@ -257,8 +257,18 @@ a span.ti-twitter-alt {
     margin-bottom: 20px;
 }
 
+.resume p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
 .resume .control-label {
     color: #ffffff; 
+}
+
+.cavalogo {
+ padding-top: 65px;
+ max-width: 150px; 
 }
 
 .location .row-title {
