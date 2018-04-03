@@ -488,11 +488,11 @@
         <div class="row contact">
           <div class="col-md-6 contact-form" id="contact">
             <center><h3 class="content-ct"><span class="ti-email"></span> Send an email to hack@hackchella.com OR Call 914 487 4223</h3></center>
-            <form class="form-horizontal" data-toggle="validator" role="form">
+            <form class="form-horizontal" data-toggle="validator" role="form" action="https://formspree.io/hack@hackchella.com" method="POST">
               <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">Your Name<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Jane Doe" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
@@ -500,7 +500,7 @@
               <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">Your Email<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control" id="email" placeholder="jane@hackchella.com" required>
+                  <input type="email"  name="_replyto" class="form-control" id="email" placeholder="jane@hackchella.com" required>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
                 </div>
@@ -508,9 +508,11 @@
               <div class="form-group">
                 <label for="message" class="col-sm-3 control-label">Your Message<sup>*</sup></label>
                 <div class="col-sm-9">
-                  <textarea id="message" class="form-control" rows="3" required></textarea>
+                  <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
                   <div class="help-block with-errors pull-right"></div>
                   <span class="form-control-feedback" aria-hidden="true"></span>
+                  <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                  <input type="hidden" name="_subject" value="Hackchella Inquiry" />
                 </div>
               </div>
               <div class="form-group">
