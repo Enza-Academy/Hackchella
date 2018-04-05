@@ -266,9 +266,13 @@ a span.ti-twitter-alt {
     color: #ffffff; 
 }
 
-.cavalogo {
- padding-top: 65px;
- max-width: 150px; 
+.sponsor-large {
+ max-width: 350px; 
+}
+
+.sponsor-small {
+ padding: 20px;
+ max-width: 165px; 
 }
 
 .location .row-title {
