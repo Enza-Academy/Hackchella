@@ -232,12 +232,19 @@ a span.ti-twitter-alt {
 
 .sponsors {
     background-color: #ffffff;
-    height: 400px;
+  /*  position: center;*/
+    height: 100%;
 }
 
 .sponsors img {
     width: 100%;
     height: auto;
+    position: center;
+}
+
+.sponsor-small {
+ padding-top: 30px;
+ max-width: 20%;
 }
 
 .location {
@@ -264,15 +271,6 @@ a span.ti-twitter-alt {
 
 .resume .control-label {
     color: #ffffff; 
-}
-
-.sponsor-large {
- max-width: 350px; 
-}
-
-.sponsor-small {
- padding: 20px;
- max-width: 165px; 
 }
 
 .location .row-title {
@@ -433,6 +431,11 @@ ul.footer-menu li a:hover {
         text-align: center;
         margin-top: 30px;
     }
+
+ .sponsor-small {
+ padding-top: 30px;
+ max-width: 100%;
+}
 }
 
 
@@ -449,6 +452,11 @@ ul.footer-menu li a:hover {
     }
     ul.footer-menu {
         margin-top: 0;
+    }
+
+.sponsor-small {
+ padding-top: 30px;
+ max-width: 100%;
     }
 }
 
