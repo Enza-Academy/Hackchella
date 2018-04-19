@@ -289,6 +289,10 @@ a span.ti-twitter-alt {
     border: none;
 }
 
+#challenges p {
+ font-size: 22px;
+}
+
 .nav-tabs {
     margin-top: 20px;
 }
