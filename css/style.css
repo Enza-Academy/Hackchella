@@ -449,7 +449,6 @@ ul.footer-menu li a:hover {
 }
 
 /* iPad Portrait */
-
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-header {
         padding: 3em 1em 1em 1em;
@@ -471,7 +470,6 @@ ul.footer-menu li a:hover {
 
 
 /* iPad Landscape */
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .speaker .feature {
         width: 49%;
