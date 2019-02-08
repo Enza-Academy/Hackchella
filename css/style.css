@@ -119,7 +119,7 @@ a:hover, a:focus, a:active, a:visited {
     background-position: center; 
     text-align: center;
     font-family: 'Dosis', san-serif;
-    height: 100vh;
+    height: 105vh;
 	min-height: 600px;
 	padding: 5%;
     color: white;
@@ -141,6 +141,7 @@ a:hover, a:focus, a:active, a:visited {
     
 .hero-header h4 {  
  font-weight: normal;
+ padding-bottom: 15px;
 }
 
 .hero-header .btn {
@@ -426,7 +427,7 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 767px) {
     .hero-header {
-        padding: 3em 1em 1em 1em;
+        padding: 3em 4em 1em 1em;
         text-align: center;
         max-height: 550px;
     }
@@ -438,21 +439,21 @@ ul.footer-menu li a:hover {
         padding: 40px 20px;
     }
     ul.footer-menu {
-        text-align: center;
-        margin-top: 30px;
-    }
-
- .sponsor-small {
- padding-top: 30px;
- max-width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
+
+.sponsor-small {
+padding-top: 30px;
+max-width: 100%;
+ }
 }
 
 /* iPad Portrait */
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-header {
-        padding: 3em 1em 1em 1em;
-        text-align: center;
+    padding: 3em 1em 1em 1em;
+    text-align: center;
     }
     .speaker .feature {
         width: 49%;
